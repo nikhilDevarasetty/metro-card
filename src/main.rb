@@ -1,7 +1,7 @@
 require_relative 'metro_system'
 
 def main
-  file_path = ARGV[0]
+  file_path = ARGV[1]
   if file_path.nil?
     puts 'Please Enter a file'
   elsif File.exist? file_path
@@ -14,5 +14,3 @@ def main
     puts 'File does not exists'
   end
 end
-
-main
